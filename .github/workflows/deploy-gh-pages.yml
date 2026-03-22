@@ -36,7 +36,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Bundle Remotion app
-        run: pnpm exec remotion bundle --public-dir=public --out-dir=build
+        run: pnpm exec remotion bundle --public-dir=public --out-dir=build --public-path=/claude-remote-eval/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
