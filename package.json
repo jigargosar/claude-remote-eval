@@ -1,0 +1,32 @@
+{
+  "name": "claude-remote-eval",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "remotion studio",
+    "build": "remotion render RemotionFeatures out/video.mp4",
+    "render-still": "remotion still RemotionFeatures --frame=0 out/thumbnail.png",
+    "deploy": "remotion bundle --public-dir=public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.29.3",
+  "dependencies": {
+    "@remotion/cli": "^4.0.438",
+    "@remotion/player": "^4.0.438",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "remotion": "^4.0.438"
+  },
+  "devDependencies": {
+    "@remotion/bundler": "^4.0.438",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  }
+}
