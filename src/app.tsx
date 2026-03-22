@@ -15,9 +15,8 @@ const App: React.FC = () => {
       autoPlay
       loop
       style={{
-        width: "100%",
-        maxWidth: 1280,
-        aspectRatio: "16 / 9",
+        width: "100vw",
+        height: "100vh",
       }}
     />
   );
